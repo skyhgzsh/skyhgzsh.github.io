@@ -1,0 +1,40 @@
+baseURL = 'https://skyhgzsh.github.io/'
+locale = 'zh-cn'
+copyright = """&copy; 2026 skyhgzsh's Blog · <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>"""
+defaultContentLanguage = 'zh-cn'
+title = "skyhgzsh's Blog"
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'auto'
+
+  [params.homeInfoParams]
+    title = "欢迎"
+    content = "常来看看~"
+
+  [params.profileMode]
+    enabled = false
+
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/skyhgzsh'
+
+[menu]
+  [[menu.main]]
+    name = '归档'
+    url = '/archives/'
+    weight = 10
+  [[menu.main]]
+    name = '搜索'
+    url = '/search/'
+    weight = 20
+  [[menu.main]]
+    name = '标签'
+    url = '/tags/'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup.goldmark.renderer]
+  unsafe = true

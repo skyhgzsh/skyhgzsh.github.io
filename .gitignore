@@ -1,0 +1,5 @@
+/.deepseek/
+/public/
+/.hugo_build.lock
+/resources/
+/assets/jsconfig.json
